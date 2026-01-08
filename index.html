@@ -1,216 +1,195 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>GymLogX Privacy Policy</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GymLogX Privacy Policy</title>
     <style>
         body { 
             font-family: Arial, sans-serif; 
             max-width: 800px; 
             margin: 50px auto; 
             padding: 20px; 
-            line-height: 1.6; 
+            line-height: 1.6;
+            color: #333;
         }
-        h1 { color: #1976d2; }
-        h2 { color: #424242; margin-top: 30px; }
-        ul { margin-left: 20px; }
-        .highlight { background-color: #fff3cd; padding: 2px 4px; }
+        h1 { 
+            color: #1976d2;
+            border-bottom: 3px solid #1976d2;
+            padding-bottom: 10px;
+        }
+        h2 { 
+            color: #424242; 
+            margin-top: 30px;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #616161;
+            margin-top: 20px;
+        }
+        ul { 
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+        a {
+            color: #1976d2;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .highlight {
+            background-color: #e3f2fd;
+            padding: 15px;
+            border-left: 4px solid #1976d2;
+            margin: 20px 0;
+        }
+        @media (max-width: 600px) {
+            body {
+                margin: 20px auto;
+                padding: 15px;
+            }
+        }
     </style>
 </head>
 <body>
     <h1>Privacy Policy for GymLogX</h1>
-    <p><strong>Last updated: January 3, 2026</strong></p>
+    <p><strong>Last updated: January 8, 2026</strong></p>
     
     <h2>Overview</h2>
     <p>GymLogX is a workout tracking and training planning application. We are committed to protecting your privacy. This policy explains what data we collect, how we use it, and your rights regarding your data.</p>
     
+    <div class="highlight">
+        <strong>Key Point:</strong> Your workout data stays on your device. We only collect anonymous technical data to improve app stability.
+    </div>
+    
     <h2>Data Collection</h2>
-    <p>GymLogX collects minimal data to improve app stability and user experience:</p>
+    <p>GymLogX collects minimal data to improve app stability and user experience.</p>
     
     <h3>Local Data (Stored on Your Device)</h3>
-    <p>All your personal workout data is stored locally on your device and is NOT transmitted to external servers:</p>
+    <p>All your personal workout data is stored locally on your device and is <strong>not transmitted</strong> to external servers:</p>
     <ul>
         <li>Workout programs and training blocks</li>
         <li>Exercises and their configurations</li>
         <li>Workout results (weight, reps, sets, time)</li>
         <li>Performance history and progress data</li>
     </ul>
-    <p>This data is stored using Android Room Database on your device and remains under your complete control.</p>
     
-    <h3>Automatically Collected Data (via Firebase)</h3>
-    <p>To improve app stability and performance, we collect the following anonymous technical data through Google Firebase services:</p>
+    <h3>Automatically Collected Technical Data (via Firebase)</h3>
+    <p>To improve app stability and performance, we collect the following technical, non-personal data through Google Firebase:</p>
     
     <h4>Firebase Crashlytics</h4>
     <ul>
-        <li>Crash reports (when the app unexpectedly closes)</li>
+        <li>Crash reports when the app unexpectedly closes</li>
         <li>Device model and operating system version</li>
         <li>App version</li>
-        <li>Stack traces (technical information about what code caused the crash)</li>
-        <li>Device language settings</li>
+        <li>Stack traces (information about what caused the crash)</li>
+        <li>Anonymous device identifiers</li>
     </ul>
-    <p><strong>Purpose:</strong> This data helps us identify and fix bugs to improve app stability. No personally identifiable information is collected.</p>
     
     <h4>Firebase Analytics</h4>
     <ul>
-        <li>Basic app usage statistics (e.g., which screens are viewed)</li>
-        <li>App session duration</li>
+        <li>Basic app usage statistics (e.g., which screens are viewed, session duration)</li>
         <li>Device type and operating system</li>
         <li>Country/region (based on IP address, not precise location)</li>
     </ul>
-    <p><strong>Purpose:</strong> This data helps us understand how users interact with the app and improve the user experience. No personally identifiable information is collected.</p>
     
-    <p><strong>Important:</strong> Firebase data is aggregated and anonymized. We cannot identify individual users from this data. Your workout data (exercises, results, programs) is NEVER sent to Firebase or any external servers.</p>
+    <p><strong>Purpose:</strong> This data is used to identify and fix bugs, understand feature usage, and improve app performance. No workout or personal information is collected.</p>
     
     <h2>Data Storage</h2>
-    <h3>Local Storage (Your Device)</h3>
     <ul>
-        <li>All workout data remains on your device</li>
-        <li>Stored using encrypted Android Room Database</li>
-        <li>Never transmitted to external servers</li>
-    </ul>
-    
-    <h3>Firebase Storage (Google Servers)</h3>
-    <ul>
-        <li>Anonymous crash reports and analytics data are stored on Google's secure servers</li>
-        <li>Data is retained for 90 days, then automatically deleted</li>
-        <li>Stored in accordance with Google's security standards</li>
+        <li>Workout data remains on your device only</li>
+        <li>Firebase technical data is transmitted securely to Google and stored according to their policies</li>
+        <li>No personally identifiable data (name, email, location) is collected</li>
     </ul>
     
     <h2>Data Backup and Export</h2>
     <p>You have full control over your workout data:</p>
     <ul>
-        <li>You can manually export your entire training database to a JSON file</li>
+        <li>You can manually export your training database to a JSON file</li>
         <li>Export files are stored on your device in a location you choose</li>
         <li>You can import previously exported data to restore your workout history</li>
     </ul>
     
     <h2>Permissions</h2>
-    <p>GymLogX may require the following permissions:</p>
     <ul>
-        <li><strong>Storage/Files:</strong> To export your workout data to JSON files and import backup files from your device storage</li>
+        <li><strong>Storage/Files:</strong> To export your workout data and import backups</li>
         <li><strong>Internet:</strong> Required for Firebase Crashlytics and Analytics to send anonymous technical data</li>
     </ul>
     
     <h2>Third-Party Services</h2>
-    <p>GymLogX uses the following third-party services:</p>
-    
     <h3>Google Firebase</h3>
-    <p>We use Firebase Crashlytics and Firebase Analytics (provided by Google LLC) to collect anonymous crash reports and usage statistics.</p>
+    <p>We use Firebase Crashlytics and Firebase Analytics to collect anonymous technical data:</p>
     <ul>
-        <li><strong>Data collected:</strong> Crash reports, device information, app usage statistics (as detailed above)</li>
-        <li><strong>Purpose:</strong> App stability and performance improvement</li>
+        <li><strong>Data collected:</strong> Crash reports, device information, and usage statistics</li>
+        <li><strong>Purpose:</strong> Improve app stability and performance</li>
         <li><strong>Privacy Policy:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></li>
-        <li><strong>Data retention:</strong> 90 days</li>
     </ul>
     
-    <h2>Data We Do NOT Collect</h2>
-    <ul>
-        <li>Names, email addresses, or other personal identifiers</li>
-        <li>Precise location data (only country/region for analytics)</li>
-        <li>Your workout data (exercises, results, programs) - this stays on your device</li>
-        <li>Photos or media files</li>
-        <li>Contact information</li>
-        <li>Financial information</li>
-    </ul>
+    <p>Firebase data is managed and stored by Google according to their privacy policies. We do not share data with any third parties other than Google Firebase.</p>
     
     <h2>How We Use Collected Data</h2>
-    <p>Anonymous technical data collected via Firebase is used exclusively to:</p>
     <ul>
-        <li>Identify and fix app crashes and bugs</li>
-        <li>Understand which features are used most frequently</li>
+        <li>Identify and fix app crashes</li>
+        <li>Understand feature usage patterns</li>
         <li>Improve app performance and stability</li>
-        <li>Make informed decisions about future feature development</li>
-    </ul>
-    <p>We do NOT:</p>
-    <ul>
-        <li>Sell your data to third parties</li>
-        <li>Use data for advertising purposes</li>
-        <li>Share data with partners for marketing</li>
-        <li>Track individual users</li>
+        <li>Make informed decisions for future features</li>
     </ul>
     
     <h2>Opting Out</h2>
-    <p>Firebase Crashlytics and Analytics are enabled by default to help us improve the app. If you wish to opt out:</p>
-    <ul>
-        <li>You can disable crash reporting in the app settings (if available)</li>
-        <li>Alternatively, you can block the app's internet access through your device settings (note: this will prevent crash reports but won't affect core app functionality as it works offline)</li>
-    </ul>
+    <p>You can disable Firebase data collection by blocking internet access for the app in your device settings. All core functionality remains available offline.</p>
     
     <h2>Pre-loaded Content</h2>
-    <p>GymLogX includes two sample workout programs for demonstration purposes:</p>
+    <p>The app includes two sample workout programs to help you get started:</p>
     <ul>
         <li>Gym workout (standard equipment)</li>
         <li>Outdoor workout (minimal equipment)</li>
     </ul>
-    <p><strong>Disclaimer:</strong> These sample programs are provided as examples to help you understand how to use the app. They are not personalized training plans. Before starting any exercise program, consult with a qualified healthcare provider or fitness professional. The developer assumes no responsibility for any injuries or health issues that may result from using these sample programs or any workout programs created within the app.</p>
-    
-    <h2>In-App Purchases and Subscriptions</h2>
-    <p>GymLogX does not include in-app purchases or subscription features at this time.</p>
     
     <h2>Age Restrictions</h2>
-    <p>GymLogX is intended for users aged 16 and above. We do not knowingly collect personal information from children under 16. If we discover that we have collected data from a child under 16, we will delete it immediately.</p>
+    <p>GymLogX is intended for users aged 16 and above. We do not knowingly collect personal information from children under 16.</p>
     
     <h2>Data Security</h2>
-    <p>We take data security seriously:</p>
     <ul>
-        <li>Your workout data is stored in an encrypted database on your device</li>
-        <li>Firebase data is transmitted over secure HTTPS connections</li>
-        <li>Google Firebase employs industry-standard security measures</li>
+        <li>Workout data is stored locally on your device and protected by your device's security measures</li>
+        <li>Firebase data is transmitted securely over HTTPS</li>
+        <li>We use industry-standard security practices to protect any data transmitted through Firebase</li>
     </ul>
-    <p>We recommend:</p>
-    <ul>
-        <li>Regularly exporting your data as a backup</li>
-        <li>Using your device's security features (screen lock, encryption)</li>
-        <li>Keeping backup files in a secure location</li>
-    </ul>
-    
-    <h2>Data Retention</h2>
-    <ul>
-        <li><strong>Local workout data:</strong> Remains on your device until you delete it or uninstall the app</li>
-        <li><strong>Firebase crash reports and analytics:</strong> Automatically deleted after 90 days</li>
-    </ul>
-    <p>Uninstalling the app will remove all locally stored workout data from your device.</p>
     
     <h2>User Rights</h2>
-    <p>You have complete control over your data:</p>
+    <p>You have the following rights regarding your data:</p>
     <ul>
-        <li><strong>Access:</strong> You can view all your workout data within the app at any time</li>
-        <li><strong>Export:</strong> You can export all your workout data to a JSON file</li>
-        <li><strong>Delete:</strong> You can delete individual workouts, exercises, or entire programs within the app</li>
-        <li><strong>Opt-out:</strong> You can disable internet access to prevent Firebase data collection</li>
-        <li><strong>Complete removal:</strong> Uninstalling the app removes all local data; Firebase data expires after 90 days</li>
+        <li>Access and export your workout data at any time through the app's export feature</li>
+        <li>Delete your workout data by uninstalling the app or clearing app data</li>
+        <li>Opt out of Firebase data collection by disabling internet access for the app</li>
+        <li>Contact us with any privacy concerns or questions</li>
     </ul>
-    
-    <h2>International Data Transfers</h2>
-    <p>Firebase data may be processed and stored on servers located in different countries, including the United States and European Union. Google Firebase complies with applicable data protection laws, including GDPR.</p>
     
     <h2>Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time to reflect changes in the app, new features, or legal requirements. When we make changes, we will update the "Last updated" date at the top of this policy and notify you through the app if the changes are significant. Continued use of the app after changes constitutes acceptance of the updated policy.</p>
-    
-    <h2>Your Consent</h2>
-    <p>By using GymLogX, you consent to this Privacy Policy and the collection of anonymous technical data via Firebase as described herein.</p>
-    
-    <h2>Medical Disclaimer</h2>
-    <p>GymLogX is a workout tracking tool, not a medical device or personalized training service. Always consult with a qualified healthcare provider before beginning any exercise program. The developer is not responsible for any injuries, health issues, or other consequences resulting from the use of this app.</p>
-    
-    <h2>Contact</h2>
-    <p>If you have any questions, concerns, or requests regarding this Privacy Policy, your data, or wish to exercise your rights, please contact us at:</p>
-    <p>Email: <a href="mailto:gymlogx.team@gmail.com">gymlogx.team@gmail.com</a></p>
-    <p>We will respond to your inquiries within 30 days.</p>
-    
-    <h2>Legal Compliance</h2>
-    <p>This app complies with:</p>
+    <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for legal reasons. When we make changes:</p>
     <ul>
-        <li><strong>GDPR</strong> (General Data Protection Regulation) for users in the European Union</li>
-        <li><strong>CCPA</strong> (California Consumer Privacy Act) for users in California</li>
-        <li><strong>Google Play Developer Program Policies</strong></li>
-        <li><strong>Google Firebase Terms of Service</strong></li>
+        <li>The "Last updated" date at the top will be revised</li>
+        <li>Significant changes will be announced in the app's "What's New" section on Google Play Store</li>
+        <li>Continued use of the app after changes means you accept the updated policy</li>
     </ul>
     
-    <h2>Summary</h2>
-    <p><strong>What we collect:</strong> Anonymous crash reports and basic usage statistics via Firebase</p>
-    <p><strong>What we DON'T collect:</strong> Your personal workout data, names, emails, precise location, or any personally identifiable information</p>
-    <p><strong>Why we collect it:</strong> To fix bugs and improve the app</p>
-    <p><strong>Your control:</strong> You can export/delete your workout data anytime, and opt out of analytics by blocking internet access</p>
+    <h2>Legal Compliance</h2>
+    <p>GymLogX complies with:</p>
+    <ul>
+        <li>Google Play Developer Program Policies</li>
+        <li>Google Firebase Terms of Service</li>
+        <li>Applicable data protection regulations</li>
+    </ul>
+    
+    <h2>Medical Disclaimer</h2>
+    <p>GymLogX is a workout tracking tool, not a medical device or personalized training service. It does not provide medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider before starting any exercise program, especially if you have any pre-existing health conditions.</p>
+    
+    <h2>Contact</h2>
+    <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your data, please contact us:</p>
+    <p>Email: <a href="mailto:gymlogx.team@gmail.com">gymlogx.team@gmail.com</a></p>
+    
+    <hr style="margin-top: 50px; border: none; border-top: 1px solid #e0e0e0;">
+    <p style="text-align: center; color: #757575; font-size: 0.9em;">© 2026 GymLogX. All rights reserved.</p>
 </body>
 </html>
