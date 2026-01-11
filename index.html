@@ -28,6 +28,11 @@
             color: #616161;
             margin-top: 20px;
         }
+        h4 {
+            color: #757575;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
         ul { 
             margin-left: 20px;
             line-height: 1.8;
@@ -45,6 +50,19 @@
             border-left: 4px solid #1976d2;
             margin: 20px 0;
         }
+        .update-note {
+            background-color: #f3e5f5;
+            padding: 15px;
+            border-left: 4px solid #7b1fa2;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        .change-highlight {
+            background-color: #fff8e1;
+            padding: 3px 6px;
+            border-radius: 3px;
+            border-left: 3px solid #ffb300;
+        }
         @media (max-width: 600px) {
             body {
                 margin: 20px auto;
@@ -55,18 +73,48 @@
 </head>
 <body>
     <h1>Privacy Policy for GymLogX</h1>
-    <p><strong>Last updated: January 8, 2026</strong></p>
-    
+    <p><strong>Last updated: January 11, 2026</strong></p>
+
+    <div class="update-note">
+        <strong>What's New:</strong> This update provides detailed information about our use of the Advertising Identifier (Ad ID) exclusively for analytics purposes. We've added clear explanations and user control instructions.
+    </div>
+
     <h2>Overview</h2>
     <p>GymLogX is a workout tracking and training planning application. We are committed to protecting your privacy. This policy explains what data we collect, how we use it, and your rights regarding your data.</p>
-    
+
     <div class="highlight">
-        <strong>Key Point:</strong> Your workout data stays on your device. We only collect anonymous technical data to improve app stability.
+        <strong>Key Point:</strong> Your workout data stays 100% on your device. We only collect anonymous technical data to improve app stability.
     </div>
+
+    <h2>Advertising Identifier (Ad ID) - Important Clarification</h2>
+    <p><span class="change-highlight">NEW SECTION</span> GymLogX uses Google Firebase services which may collect the <strong>Advertising Identifier (Ad ID)</strong> from your device <strong>exclusively for analytics purposes</strong>:</p>
     
+    <h3>Why we need Ad ID:</h3>
+    <ul>
+        <li><strong>Analytics attribution</strong>: To understand which app installations come from which sources</li>
+        <li><strong>Crash reporting</strong>: To group crash reports by installation source</li>
+        <li><strong>Usage statistics</strong>: To measure user engagement anonymously</li>
+    </ul>
+
+    <h3>Important details about Ad ID usage:</h3>
+    <ul>
+        <li>Ad ID is collected in <strong>anonymous, non-personalized form only</strong></li>
+        <li>It is <strong>NOT linked</strong> to your identity, workout data, or personal information</li>
+        <li>We <strong>do not use Ad ID for advertising</strong> or share it with advertisers</li>
+        <li>It is used <strong>solely for technical improvement</strong> of the app</li>
+    </ul>
+
+    <h3>Your control over Ad ID:</h3>
+    <p>You can control or reset your Advertising Identifier at any time:</p>
+    <ul>
+        <li><strong>Android Settings</strong> → <strong>Google</strong> → <strong>Ads</strong> → <strong>Reset advertising ID</strong></li>
+        <li>You may also opt out of personalized ads in your device settings</li>
+        <li>Resetting creates a new anonymous identifier</li>
+    </ul>
+
     <h2>Data Collection</h2>
     <p>GymLogX collects minimal data solely to improve app stability and performance.</p>
-    
+
     <h3>Local Data (Stored on Your Device)</h3>
     <p>All personal workout data is stored locally and <strong>not transmitted externally:</strong></p>
     <ul>
@@ -75,10 +123,10 @@
         <li>Workout results (weight, reps, sets, time)</li>
         <li>Performance history and progress data</li>
     </ul>
-    
+
     <h3>Automatically Collected Technical Data (via Firebase)</h3>
-    <p>We use Google Firebase to collect anonymous technical data:</p>
-    
+    <p><span class="change-highlight">UPDATED</span> We use Google Firebase to collect anonymous technical data:</p>
+
     <h4>Firebase Crashlytics</h4>
     <ul>
         <li>Crash reports when the app unexpectedly closes</li>
@@ -87,23 +135,24 @@
         <li>Stack traces (information about what caused the crash)</li>
         <li>Anonymous device identifiers used for technical purposes</li>
     </ul>
-    
+
     <h4>Firebase Analytics</h4>
     <ul>
-        <li>Basic app usage statistics (e.g., which screens are viewed, session duration)</li>
+        <li><span class="change-highlight">UPDATED</span> Basic app usage statistics (e.g., which screens are viewed, session duration)</li>
         <li>Device type and operating system</li>
         <li>Country/region based on IP address (no precise location)</li>
+        <li><span class="change-highlight">NEW:</span> Advertising Identifier (Ad ID) - collected anonymously for attribution as described above</li>
     </ul>
-    
+
     <p><strong>Purpose:</strong> This data is used to identify and fix bugs, understand feature usage, and improve app performance. No workout or personal information is collected. Anonymous device identifiers are used solely for technical improvement.</p>
-    
+
     <h2>Data Storage</h2>
     <ul>
         <li>Workout data remains on your device only</li>
         <li>Firebase technical data is transmitted securely to Google and stored according to their policies</li>
         <li>No personally identifiable data (name, email, precise location) is collected</li>
     </ul>
-    
+
     <h2>Data Backup and Export</h2>
     <p>You have full control over your workout data:</p>
     <ul>
@@ -111,24 +160,24 @@
         <li>Export files are stored on your device in a location you choose</li>
         <li>You can import previously exported data to restore your workout history</li>
     </ul>
-    
+
     <h2>Permissions</h2>
     <ul>
         <li><strong>Storage/Files:</strong> To export and import workout backups</li>
         <li><strong>Internet:</strong> Required for Firebase Crashlytics and Analytics to send anonymous technical data</li>
     </ul>
-    
+
     <h2>Third-Party Services</h2>
     <h3>Google Firebase</h3>
-    <p>We use Firebase Crashlytics and Firebase Analytics to collect anonymous technical data:</p>
+    <p><span class="change-highlight">UPDATED</span> We use Firebase Crashlytics and Firebase Analytics to collect anonymous technical data:</p>
     <ul>
-        <li><strong>Data collected:</strong> Crash reports, device information, and usage statistics</li>
+        <li><strong>Data collected:</strong> Crash reports, device information, usage statistics, and Advertising Identifier (Ad ID) for attribution</li>
         <li><strong>Purpose:</strong> Improve app stability and performance</li>
         <li><strong>Privacy Policy:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></li>
     </ul>
-    
+
     <p>By using GymLogX, you consent to the collection of anonymous technical data as described herein. No personal or workout data leaves your device.</p>
-    
+
     <h2>How We Use Collected Data</h2>
     <ul>
         <li>Identify and fix app crashes</li>
@@ -136,53 +185,69 @@
         <li>Improve app performance and stability</li>
         <li>Make informed decisions for future features</li>
     </ul>
-    
+
     <h2>Opting Out</h2>
-    <p>You can disable Firebase data collection by blocking internet access for the app. All core functionality remains offline.</p>
-    
+    <p><span class="change-highlight">UPDATED</span> You have multiple options to control data collection:</p>
+    <ul>
+        <li>Disable Firebase data collection by blocking internet access for the app</li>
+        <li>Reset your Advertising Identifier (Ad ID) in device settings as described above</li>
+        <li>All core functionality remains available offline</li>
+    </ul>
+
     <h2>Pre-loaded Content</h2>
     <p>The app includes two sample workout programs to help you get started:</p>
     <ul>
         <li>Gym workout (standard equipment)</li>
         <li>Outdoor workout (minimal equipment)</li>
     </ul>
-    
+
     <h2>Data Security</h2>
     <ul>
         <li>Workout data stays on your device and relies on your device's security measures</li>
         <li>Firebase data is transmitted securely over HTTPS</li>
         <li>Industry-standard security practices are used for any data transmitted through Firebase</li>
     </ul>
-    
+
     <h2>User Rights</h2>
     <ul>
         <li>Access and export workout data at any time via the app's export feature</li>
         <li>Delete workout data by uninstalling the app or clearing app data</li>
+        <li><span class="change-highlight">UPDATED:</span> Control Advertising Identifier (Ad ID) through device settings</li>
         <li>Opt out of Firebase data collection by disabling internet access</li>
         <li>Contact us with any privacy concerns or questions</li>
     </ul>
-    
+
+    <h2>Changes in This Update (January 12, 2026)</h2>
+    <p><span class="change-highlight">NEW SECTION</span> This version of our Privacy Policy includes the following important updates:</p>
+    <ul>
+        <li><strong>Added detailed explanation</strong> of Advertising Identifier (Ad ID) usage</li>
+        <li><strong>Clarified</strong> that Ad ID is used exclusively for analytics attribution</li>
+        <li><strong>Added user instructions</strong> for controlling and resetting Ad ID</li>
+        <li><strong>Enhanced transparency</strong> about data collection purposes</li>
+        <li><strong>Updated</strong> all relevant sections to reflect current practices</li>
+    </ul>
+
     <h2>Changes to This Policy</h2>
     <ul>
         <li>The "Last updated" date will be revised when changes occur</li>
         <li>Significant updates are announced in the app's "What's New" section on Google Play Store</li>
         <li>Continued use of the app after changes means you accept the updated policy</li>
     </ul>
-    
+
     <h2>Legal Compliance</h2>
     <ul>
         <li>Google Play Developer Program Policies</li>
         <li>Google Firebase Terms of Service</li>
         <li>Applicable data protection regulations</li>
     </ul>
-    
+
     <h2>Medical Disclaimer</h2>
     <p>GymLogX is a workout tracking tool, not a medical device or personalized training service. It does not provide medical advice, diagnosis, or treatment. Always consult a qualified healthcare provider before starting any exercise program.</p>
-    
+
     <h2>Contact</h2>
     <p>If you have questions or concerns regarding this Privacy Policy or your data, contact us:</p>
     <p>Email: <a href="mailto:gymlogx.team@gmail.com">gymlogx.team@gmail.com</a></p>
-    
+
     <hr style="margin-top: 50px; border: none; border-top: 1px solid #e0e0e0;">
     <p style="text-align: center; color: #757575; font-size: 0.9em;">© 2026 GymLogX. All rights reserved.</p>
 </body>
