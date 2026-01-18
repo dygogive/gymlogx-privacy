@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Deletion Request - GymLogX</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container {
+            max-width: 700px;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 2em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+        
+        .app-name {
+            color: #667eea;
+            font-size: 0.9em;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #34495e;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        .info-box {
+            background: #e3f2fd;
+            padding: 20px;
+            border-left: 4px solid #2196f3;
+            margin: 25px 0;
+            border-radius: 4px;
+        }
+        
+        .warning-box {
+            background: #fff3cd;
+            padding: 20px;
+            border-left: 4px solid #ffc107;
+            margin: 25px 0;
+            border-radius: 4px;
+        }
+        
+        .success-box {
+            background: #d4edda;
+            padding: 20px;
+            border-left: 4px solid #28a745;
+            margin: 25px 0;
+            border-radius: 4px;
+        }
+        
+        ol, ul {
+            margin-left: 25px;
+            margin-bottom: 20px;
+        }
+        
+        li {
+            margin-bottom: 12px;
+        }
+        
+        .email-button {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 1.1em;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+        }
+        
+        .email-button:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #667eea;
+            color: white;
+            font-weight: bold;
+        }
+        
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 25px;
+            }
+            
+            h1 {
+                font-size: 1.6em;
+            }
+            
+            h2 {
+                font-size: 1.2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Data Deletion Request</h1>
+        <p class="app-name">GymLogX - Workout Tracking App</p>
+
+        <div class="info-box">
+            <strong>📱 Important:</strong> GymLogX stores all your workout data <strong>locally on your device only</strong>. We do not have access to your workout information, and it is never uploaded to our servers.
+        </div>
+
+        <h2>How to Delete Your Data</h2>
+
+        <h3>Option 1: Delete All Local Data (Recommended)</h3>
+        <p>To immediately and permanently delete all your workout data:</p>
+        <ol>
+            <li>Open your device's <strong>Settings</strong></li>
+            <li>Go to <strong>Apps</strong> or <strong>Applications</strong></li>
+            <li>Find and tap <strong>GymLogX</strong></li>
+            <li>Tap <strong>Storage</strong></li>
+            <li>Tap <strong>Clear data</strong> or <strong>Delete data</strong></li>
+        </ol>
+        <p>Or simply <strong>uninstall the app</strong> to delete all data automatically.</p>
+
+        <div class="warning-box">
+            <strong>⚠️ Warning:</strong> Deleting your data is permanent and cannot be undone. All your workout programs, exercises, and training history will be lost. Make sure to export a backup first if you want to keep your data.
+        </div>
+
+        <h3>Option 2: Request Analytics Data Deletion</h3>
+        <p>If you also want to delete the anonymous analytics data we collect via Firebase:</p>
+        
+        <a href="mailto:gymlogx.team@gmail.com?subject=GymLogX%20Data%20Deletion%20Request&body=Hello%20GymLogX%20Team%2C%0A%0AI%20would%20like%20to%20request%20deletion%20of%20my%20analytics%20data.%0A%0ADevice%20information%20(optional)%3A%0A-%20Device%20model%3A%20%0A-%20Android%20version%3A%20%0A%0AThank%20you." class="email-button">
+            📧 Send Data Deletion Request
+        </a>
+
+        <p>Or manually email us at: <strong>gymlogx.team@gmail.com</strong></p>
+        <p>Subject: <em>GymLogX Data Deletion Request</em></p>
+
+        <h2>What Data is Deleted?</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Data Type</th>
+                    <th>Storage Location</th>
+                    <th>Deletion Method</th>
+                    <th>Retention</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Workout data</strong><br>(programs, exercises, results)</td>
+                    <td>Your device only</td>
+                    <td>Uninstall app or clear app data</td>
+                    <td>Deleted immediately</td>
+                </tr>
+                <tr>
+                    <td><strong>User preferences</strong><br>(settings, themes)</td>
+                    <td>Your device only</td>
+                    <td>Uninstall app or clear app data</td>
+                    <td>Deleted immediately</td>
+                </tr>
+                <tr>
+                    <td><strong>Analytics data</strong><br>(anonymous usage stats)</td>
+                    <td>Firebase (Google)</td>
+                    <td>Auto-deleted or email request</td>
+                    <td>2-90 days</td>
+                </tr>
+                <tr>
+                    <td><strong>Crash reports</strong><br>(anonymous error logs)</td>
+                    <td>Firebase (Google)</td>
+                    <td>Auto-deleted or email request</td>
+                    <td>90 days</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>What Happens After Deletion?</h2>
+
+        <div class="success-box">
+            <strong>✅ Local data (workout history):</strong>
+            <ul style="margin: 10px 0 0 20px;">
+                <li>Deleted immediately from your device</li>
+                <li>Cannot be recovered</li>
+                <li>No data exists on our servers (never uploaded)</li>
+            </ul>
+        </div>
+
+        <div class="success-box">
+            <strong>✅ Analytics data (Firebase):</strong>
+            <ul style="margin: 10px 0 0 20px;">
+                <li>Automatically deleted within 2-90 days</li>
+                <li>Can be manually deleted upon email request (processed within 30 days)</li>
+                <li>Already anonymous (not linked to your identity)</li>
+            </ul>
+        </div>
+
+        <h2>Data That is Never Collected</h2>
+        <p>GymLogX does <strong>NOT</strong> collect or store:</p>
+        <ul>
+            <li>❌ Your name, email, or phone number</li>
+            <li>❌ Advertising Identifier (Ad ID)</li>
+            <li>❌ Precise or approximate location</li>
+            <li>❌ Photos, videos, or files</li>
+            <li>❌ Any personally identifiable information</li>
+        </ul>
+
+        <h2>Need Help?</h2>
+        <p>If you have questions about data deletion or privacy:</p>
+        <ul>
+            <li>📧 Email: <a href="mailto:gymlogx.team@gmail.com">gymlogx.team@gmail.com</a></li>
+            <li>📄 Privacy Policy: <a href="index.html">View Privacy Policy</a></li>
+        </ul>
+
+        <div class="footer">
+            <p>© 2026 GymLogX by DygoGive. All rights reserved.</p>
+            <p style="margin-top: 10px;">Last updated: January 19, 2026</p>
+        </div>
+    </div>
+</body>
+</html>
