@@ -57,11 +57,12 @@
             margin: 20px 0;
             border-radius: 4px;
         }
-        .change-highlight {
-            background-color: #fff8e1;
-            padding: 3px 6px;
-            border-radius: 3px;
-            border-left: 3px solid #ffb300;
+        .important-note {
+            background-color: #fff3cd;
+            padding: 15px;
+            border-left: 4px solid #ffc107;
+            margin: 20px 0;
+            border-radius: 4px;
         }
         @media (max-width: 600px) {
             body {
@@ -73,44 +74,18 @@
 </head>
 <body>
     <h1>Privacy Policy for GymLogX</h1>
-    <p><strong>Last updated: January 11, 2026</strong></p>
+    <p><strong>Last updated: January 19, 2026</strong></p>
 
     <div class="update-note">
-        <strong>What's New:</strong> This update provides detailed information about our use of the Advertising Identifier (Ad ID) exclusively for analytics purposes. We've added clear explanations and user control instructions.
+        <strong>What's New (January 19, 2026):</strong> We have disabled Advertising Identifier (Ad ID) collection. This policy now reflects that NO Ad ID is collected by GymLogX.
     </div>
 
     <h2>Overview</h2>
     <p>GymLogX is a workout tracking and training planning application. We are committed to protecting your privacy. This policy explains what data we collect, how we use it, and your rights regarding your data.</p>
 
     <div class="highlight">
-        <strong>Key Point:</strong> Your workout data stays 100% on your device. We only collect anonymous technical data to improve app stability.
+        <strong>Key Point:</strong> Your workout data stays 100% on your device. We only collect anonymous technical data to improve app stability. <strong>We do NOT collect Advertising ID (Ad ID).</strong>
     </div>
-
-    <h2>Advertising Identifier (Ad ID) - Important Clarification</h2>
-    <p><span class="change-highlight">NEW SECTION</span> GymLogX uses Google Firebase services which may collect the <strong>Advertising Identifier (Ad ID)</strong> from your device <strong>exclusively for analytics purposes</strong>:</p>
-    
-    <h3>Why we need Ad ID:</h3>
-    <ul>
-        <li><strong>Analytics attribution</strong>: To understand which app installations come from which sources</li>
-        <li><strong>Crash reporting</strong>: To group crash reports by installation source</li>
-        <li><strong>Usage statistics</strong>: To measure user engagement anonymously</li>
-    </ul>
-
-    <h3>Important details about Ad ID usage:</h3>
-    <ul>
-        <li>Ad ID is collected in <strong>anonymous, non-personalized form only</strong></li>
-        <li>It is <strong>NOT linked</strong> to your identity, workout data, or personal information</li>
-        <li>We <strong>do not use Ad ID for advertising</strong> or share it with advertisers</li>
-        <li>It is used <strong>solely for technical improvement</strong> of the app</li>
-    </ul>
-
-    <h3>Your control over Ad ID:</h3>
-    <p>You can control or reset your Advertising Identifier at any time:</p>
-    <ul>
-        <li><strong>Android Settings</strong> → <strong>Google</strong> → <strong>Ads</strong> → <strong>Reset advertising ID</strong></li>
-        <li>You may also opt out of personalized ads in your device settings</li>
-        <li>Resetting creates a new anonymous identifier</li>
-    </ul>
 
     <h2>Data Collection</h2>
     <p>GymLogX collects minimal data solely to improve app stability and performance.</p>
@@ -125,7 +100,7 @@
     </ul>
 
     <h3>Automatically Collected Technical Data (via Firebase)</h3>
-    <p><span class="change-highlight">UPDATED</span> We use Google Firebase to collect anonymous technical data:</p>
+    <p>We use Google Firebase to collect anonymous technical data:</p>
 
     <h4>Firebase Crashlytics</h4>
     <ul>
@@ -133,16 +108,28 @@
         <li>Device model and operating system version</li>
         <li>App version</li>
         <li>Stack traces (information about what caused the crash)</li>
-        <li>Anonymous device identifiers used for technical purposes</li>
+        <li>Anonymous device identifiers (randomly generated UUID, not linked to your identity)</li>
     </ul>
 
     <h4>Firebase Analytics</h4>
     <ul>
-        <li><span class="change-highlight">UPDATED</span> Basic app usage statistics (e.g., which screens are viewed, session duration)</li>
+        <li>Basic app usage statistics (e.g., which screens are viewed, session duration)</li>
         <li>Device type and operating system</li>
         <li>Country/region based on IP address (no precise location)</li>
-        <li><span class="change-highlight">NEW:</span> Advertising Identifier (Ad ID) - collected anonymously for attribution as described above</li>
+        <li>Anonymous session data</li>
     </ul>
+
+    <div class="important-note">
+        <strong>IMPORTANT - What We DO NOT Collect:</strong>
+        <ul>
+            <li><strong>❌ Advertising Identifier (Ad ID)</strong> - We have explicitly disabled Ad ID collection</li>
+            <li>❌ Your name, email, or phone number</li>
+            <li>❌ Precise or approximate location (GPS)</li>
+            <li>❌ Photos, files, or media</li>
+            <li>❌ Any personally identifiable information</li>
+            <li>❌ Your workout data (stored locally only)</li>
+        </ul>
+    </div>
 
     <p><strong>Purpose:</strong> This data is used to identify and fix bugs, understand feature usage, and improve app performance. No workout or personal information is collected. Anonymous device identifiers are used solely for technical improvement.</p>
 
@@ -169,9 +156,10 @@
 
     <h2>Third-Party Services</h2>
     <h3>Google Firebase</h3>
-    <p><span class="change-highlight">UPDATED</span> We use Firebase Crashlytics and Firebase Analytics to collect anonymous technical data:</p>
+    <p>We use Firebase Crashlytics and Firebase Analytics to collect anonymous technical data:</p>
     <ul>
-        <li><strong>Data collected:</strong> Crash reports, device information, usage statistics, and Advertising Identifier (Ad ID) for attribution</li>
+        <li><strong>Data collected:</strong> Crash reports, device information, anonymous usage statistics</li>
+        <li><strong>NOT collected:</strong> Advertising Identifier (Ad ID) - explicitly disabled</li>
         <li><strong>Purpose:</strong> Improve app stability and performance</li>
         <li><strong>Privacy Policy:</strong> <a href="https://firebase.google.com/support/privacy" target="_blank">https://firebase.google.com/support/privacy</a></li>
     </ul>
@@ -187,11 +175,11 @@
     </ul>
 
     <h2>Opting Out</h2>
-    <p><span class="change-highlight">UPDATED</span> You have multiple options to control data collection:</p>
+    <p>You have multiple options to control data collection:</p>
     <ul>
         <li>Disable Firebase data collection by blocking internet access for the app</li>
-        <li>Reset your Advertising Identifier (Ad ID) in device settings as described above</li>
         <li>All core functionality remains available offline</li>
+        <li>Uninstall the app to remove all data</li>
     </ul>
 
     <h2>Pre-loaded Content</h2>
@@ -212,19 +200,17 @@
     <ul>
         <li>Access and export workout data at any time via the app's export feature</li>
         <li>Delete workout data by uninstalling the app or clearing app data</li>
-        <li><span class="change-highlight">UPDATED:</span> Control Advertising Identifier (Ad ID) through device settings</li>
         <li>Opt out of Firebase data collection by disabling internet access</li>
         <li>Contact us with any privacy concerns or questions</li>
     </ul>
 
-    <h2>Changes in This Update (January 11, 2026)</h2>
-    <p><span class="change-highlight">NEW SECTION</span> This version of our Privacy Policy includes the following important updates:</p>
+    <h2>Changes in This Update (January 19, 2026)</h2>
+    <p>This version of our Privacy Policy includes the following important updates:</p>
     <ul>
-        <li><strong>Added detailed explanation</strong> of Advertising Identifier (Ad ID) usage</li>
-        <li><strong>Clarified</strong> that Ad ID is used exclusively for analytics attribution</li>
-        <li><strong>Added user instructions</strong> for controlling and resetting Ad ID</li>
-        <li><strong>Enhanced transparency</strong> about data collection purposes</li>
-        <li><strong>Updated</strong> all relevant sections to reflect current practices</li>
+        <li><strong>Disabled Advertising ID (Ad ID) collection</strong> - We no longer collect Ad ID</li>
+        <li><strong>Updated data collection description</strong> to reflect current practices</li>
+        <li><strong>Clarified</strong> that only anonymous technical data is collected</li>
+        <li><strong>Enhanced transparency</strong> about what we DO NOT collect</li>
     </ul>
 
     <h2>Changes to This Policy</h2>
